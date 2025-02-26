@@ -1,8 +1,10 @@
-//
-//  Gender.swift
-//  movies_api
-//
-//  Created by user255005 on 2/10/25.
-//
-
 import Foundation
+
+struct Genre: Codable, Identifiable {
+    let id: Int
+    let name: String
+}
+
+struct GenreResponse: Codable {
+    let genres: [Genre]
+}
